@@ -1,0 +1,15 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner a {
+  font-weight: 400;
+}
+
+// dropdown
+.el-dropdown-menu a {
+  display: block;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}

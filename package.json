@@ -1,0 +1,78 @@
+{
+  "name": "naive-admin",
+  "version": "1.0.0",
+  "description": "vue admin",
+  "author": "Wind",
+  "scripts": {
+    "build": "vue-cli-service build",
+    "build:stage": "vue-cli-service build --mode staging",
+    "dev": "vue-cli-service serve",
+    "inspect": "vue inspect > output.js",
+    "inspect:pro": "vue inspect --mode production > output.js",
+    "lint": "pnpm run lint:js && pnpm run lint:prettier",
+    "lint-staged": "lint-staged",
+    "lint:js": "eslint --ext \"**/*.{js,vue}\"",
+    "lint:prettier": "prettier --check **/*.{html,scss,js,vue,md}",
+    "lintfix": "pnpm run lintfix:js && pnpm run lintfix:prettier",
+    "lintfix:js": "eslint --ext \"**/*.{js,vue}\" --fix",
+    "lintfix:prettier": "prettier --write **/*.{html,scss,js,vue,md}",
+    "prepare": "husky install",
+    "preview": "node script/index.js --preview",
+    "report": "node script/index.js --preview --report",
+    "start": "vue-cli-service serve",
+    "svgo": "svgo -f src/assets/icons/svg",
+    "test": "vitest",
+    "test:br": "npx http-server dist --cors --brotli -c-1",
+    "test:gzip": "npx http-server dist --cors --gzip -c-1"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{scss,md}": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "dependencies": {
+    "@riophae/vue-treeselect": "^0.4.0",
+    "axios": "~0.19.2",
+    "core-js": "^3.21.1",
+    "dayjs": "^1.10.6",
+    "element-ui": "^2.15.6",
+    "js-cookie": "2.2.0",
+    "lodash-es": "^4.17.21",
+    "nprogress": "0.2.0",
+    "path-to-regexp": "2.4.0",
+    "screenfull": "^5.2.0",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "chalk": "2.4.2",
+    "compression-webpack-plugin": "^6.1.1",
+    "connect": "3.6.6",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.5.1",
+    "runjs": "4.3.2",
+    "sass": "1.26.8",
+    "sass-loader": "8.0.2",
+    "serve-static": "1.13.2",
+    "svg-sprite-loader": "4.1.3",
+    "svgo": "^2.8.0",
+    "vite": "^2.9.9",
+    "vitest": "^0.12.4",
+    "vue-cli-plugin-windicss": "~1.1.4",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "4.46.0"
+  }
+}
