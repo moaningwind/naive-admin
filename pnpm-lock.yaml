@@ -5,9 +5,9 @@ specifiers:
   '@vue/cli-plugin-babel': ^4.5.0
   '@vue/cli-service': ^4.5.0
   axios: ~0.19.2
-  chalk: 2.4.2
+  chalk: ~2.4.2
   compression-webpack-plugin: ^6.1.1
-  connect: 3.6.6
+  connect: ^3.6.6
   core-js: ^3.21.1
   dayjs: ^1.10.6
   element-ui: ^2.15.6
@@ -16,20 +16,19 @@ specifiers:
   eslint-plugin-prettier: ^4.0.0
   eslint-plugin-vue: ^8.0.3
   husky: ^7.0.4
-  js-cookie: 2.2.0
+  js-cookie: ~2.2.0
   lint-staged: ^12.1.2
   lodash-es: ^4.17.21
   mockjs: ^1.1.0
-  nprogress: 0.2.0
+  nprogress: ~0.2.0
   path-to-regexp: 2.4.0
   prettier: ^2.5.1
-  runjs: 4.3.2
-  sass: 1.26.8
-  sass-loader: 8.0.2
+  runjs: ~4.3.2
+  sass: ~1.26.8
+  sass-loader: ~8.0.2
   screenfull: ^5.2.0
-  serve-static: 1.13.2
-  svg-sprite-loader: 4.1.3
-  svgo: ^2.8.0
+  serve-static: ^1.13.2
+  svg-sprite-loader: ~4.1.3
   vite: ^2.9.9
   vitest: ^0.12.4
   vue: ^2.6.14
@@ -37,7 +36,7 @@ specifiers:
   vue-router: ^3.5.3
   vue-template-compiler: ^2.6.14
   vuex: ^3.6.2
-  webpack: 4.46.0
+  webpack: ^4.46.0
 
 dependencies:
   '@riophae/vue-treeselect': 0.4.0_vue@2.6.14
@@ -71,9 +70,8 @@ devDependencies:
   runjs: 4.3.2
   sass: 1.26.8
   sass-loader: 8.0.2_sass@1.26.8+webpack@4.46.0
-  serve-static: 1.13.2
+  serve-static: 1.15.0
   svg-sprite-loader: 4.1.3_webpack@4.46.0
-  svgo: 2.8.0
   vite: 2.9.13_sass@1.26.8
   vitest: 0.12.10_sass@1.26.8
   vue-cli-plugin-windicss: 1.1.4_@vue+cli-service@4.5.19
@@ -1500,11 +1498,6 @@ packages:
 
   /@soda/get-current-script/1.0.2:
     resolution: {integrity: sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==}
-    dev: true
-
-  /@trysound/sax/0.2.0:
-    resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
-    engines: {node: '>=10.13.0'}
     dev: true
 
   /@types/body-parser/1.19.2:
@@ -3469,11 +3462,6 @@ packages:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
     dev: true
 
-  /commander/7.2.0:
-    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
-    engines: {node: '>= 10'}
-    dev: true
-
   /commander/9.3.0:
     resolution: {integrity: sha512-hv95iU5uXPbK83mjrJKuZyFM/LBAoCV/XhVGkS5Je6tl7sxr6A0ITMw5WoRV46/UaJ46Nllm3Xt7IaJhXTIkzw==}
     engines: {node: ^12.20.0 || >=14}
@@ -4302,10 +4290,6 @@ packages:
     dependencies:
       inherits: 2.0.4
       minimalistic-assert: 1.0.1
-    dev: true
-
-  /destroy/1.0.4:
-    resolution: {integrity: sha512-3NdhDuEXnfun/z7x9GOElY49LoqVHoGScmOKwmxhsS8N5Y+Z8KyPPDnaSzqWgYt/ji4mqwfTS34Htrk0zPIXVg==}
     dev: true
 
   /destroy/1.2.0:
@@ -7199,11 +7183,6 @@ packages:
       mime-db: 1.52.0
     dev: true
 
-  /mime/1.4.1:
-    resolution: {integrity: sha512-KI1+qOZu5DcW6wayYHSzR/tXKCDC5Om4s1z2QJjDULzLcmf3DvzS7oluY4HCTrc+9FiKmWUgeNLg7W3uIQvxtQ==}
-    hasBin: true
-    dev: true
-
   /mime/1.6.0:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
     engines: {node: '>=4'}
@@ -9093,27 +9072,6 @@ packages:
       lru-cache: 6.0.0
     dev: true
 
-  /send/0.16.2:
-    resolution: {integrity: sha512-E64YFPUssFHEFBvpbbjr44NCLtI1AohxQ8ZSiJjQLskAdKuriYEP6VyGEsRDH8ScozGpkaX1BGvhanqCwkcEZw==}
-    engines: {node: '>= 0.8.0'}
-    dependencies:
-      debug: 2.6.9
-      depd: 1.1.2
-      destroy: 1.0.4
-      encodeurl: 1.0.2
-      escape-html: 1.0.3
-      etag: 1.8.1
-      fresh: 0.5.2
-      http-errors: 1.6.3
-      mime: 1.4.1
-      ms: 2.0.0
-      on-finished: 2.3.0
-      range-parser: 1.2.1
-      statuses: 1.4.0
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /send/0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
@@ -9179,18 +9137,6 @@ packages:
       http-errors: 1.6.3
       mime-types: 2.1.35
       parseurl: 1.3.3
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /serve-static/1.13.2:
-    resolution: {integrity: sha512-p/tdJrO4U387R9oMjb1oj7qSMaMfmOyd4j9hOFoxZe2baQszgHcSWjuya/CiT5kgZZKRudHNOA0pYXOl8rQ5nw==}
-    engines: {node: '>= 0.8.0'}
-    dependencies:
-      encodeurl: 1.0.2
-      escape-html: 1.0.3
-      parseurl: 1.3.3
-      send: 0.16.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -9855,20 +9801,6 @@ packages:
       stable: 0.1.8
       unquote: 1.1.1
       util.promisify: 1.0.1
-    dev: true
-
-  /svgo/2.8.0:
-    resolution: {integrity: sha512-+N/Q9kV1+F+UeWYoSiULYo4xYSDQlTgb+ayMobAXPwMnLvop7oxKMo9OzIrX5x3eS4L4f2UHhc9axXwY8DpChg==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
-    dependencies:
-      '@trysound/sax': 0.2.0
-      commander: 7.2.0
-      css-select: 4.3.0
-      css-tree: 1.1.3
-      csso: 4.2.0
-      picocolors: 1.0.0
-      stable: 0.1.8
     dev: true
 
   /table/6.8.0:

@@ -19,11 +19,10 @@
     "prepare": "husky install",
     "preview": "node script/index.js --preview",
     "report": "node script/index.js --preview --report",
-    "start": "vue-cli-service serve",
-    "svgo": "svgo -f src/assets/icons/svg",
+    "svgo": "pnpm dlx svgo -f src/assets/icons/svg",
     "test": "vitest",
-    "test:br": "npx http-server dist --cors --brotli -c-1",
-    "test:gzip": "npx http-server dist --cors --gzip -c-1"
+    "test:br": "pnpm dlx http-server dist --cors --brotli -c-1",
+    "test:gzip": "pnpm dlx http-server dist --cors --gzip -c-1"
   },
   "lint-staged": {
     "*.{js,vue}": [
@@ -40,9 +39,9 @@
     "core-js": "^3.21.1",
     "dayjs": "^1.10.6",
     "element-ui": "^2.15.6",
-    "js-cookie": "2.2.0",
+    "js-cookie": "~2.2.0",
     "lodash-es": "^4.17.21",
-    "nprogress": "0.2.0",
+    "nprogress": "~0.2.0",
     "path-to-regexp": "2.4.0",
     "screenfull": "^5.2.0",
     "vue": "^2.6.14",
@@ -52,9 +51,9 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
     "@vue/cli-service": "^4.5.0",
-    "chalk": "2.4.2",
+    "chalk": "~2.4.2",
     "compression-webpack-plugin": "^6.1.1",
-    "connect": "3.6.6",
+    "connect": "^3.6.6",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -63,16 +62,15 @@
     "lint-staged": "^12.1.2",
     "mockjs": "^1.1.0",
     "prettier": "^2.5.1",
-    "runjs": "4.3.2",
-    "sass": "1.26.8",
-    "sass-loader": "8.0.2",
-    "serve-static": "1.13.2",
-    "svg-sprite-loader": "4.1.3",
-    "svgo": "^2.8.0",
+    "runjs": "~4.3.2",
+    "sass": "~1.26.8",
+    "sass-loader": "~8.0.2",
+    "serve-static": "^1.13.2",
+    "svg-sprite-loader": "~4.1.3",
     "vite": "^2.9.9",
     "vitest": "^0.12.4",
     "vue-cli-plugin-windicss": "~1.1.4",
     "vue-template-compiler": "^2.6.14",
-    "webpack": "4.46.0"
+    "webpack": "^4.46.0"
   }
 }
