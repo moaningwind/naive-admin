@@ -7,8 +7,6 @@
     "build": "vue-cli-service build",
     "build:stage": "vue-cli-service build --mode staging",
     "dev": "vue-cli-service serve",
-    "inspect": "vue inspect > output.js",
-    "inspect:pro": "vue inspect --mode production > output.js",
     "lint": "pnpm run lint:js && pnpm run lint:prettier",
     "lint-staged": "lint-staged",
     "lint:js": "eslint --ext \"**/*.{js,vue}\"",
