@@ -7,8 +7,8 @@
     "build:stage": "vue-cli-service build --mode staging",
     "dev": "vue-cli-service serve",
     "lint": "eslint . --ext .js,.vue",
-    "lint:prettier": "prettier . --check",
     "lint-staged": "lint-staged",
+    "lint:prettier": "prettier . --check",
     "lintfix": "eslint . --fix --ext .js,.vue",
     "lintfix:prettier": "prettier . --write --ignore-unknown",
     "prepare": "husky install",
@@ -24,6 +24,9 @@
     ],
     "*.{js,vue}": [
       "eslint --fix"
+    ],
+    "package.json": [
+      "pnpm dlx sort-package-json"
     ]
   },
   "dependencies": {
