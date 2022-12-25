@@ -1,19 +1,16 @@
 {
   "name": "naive-admin",
   "version": "1.0.0",
-  "description": "vue admin",
   "author": "Wind",
   "scripts": {
     "build": "vue-cli-service build",
     "build:stage": "vue-cli-service build --mode staging",
     "dev": "vue-cli-service serve",
-    "lint": "pnpm run lint:js && pnpm run lint:prettier",
+    "lint": "eslint . --ext .js,.vue",
+    "lint:prettier": "prettier . --check",
     "lint-staged": "lint-staged",
-    "lint:js": "eslint --ext \"**/*.{js,vue}\"",
-    "lint:prettier": "prettier --check **/*.{html,scss,js,vue,md}",
-    "lintfix": "pnpm run lintfix:js && pnpm run lintfix:prettier",
-    "lintfix:js": "eslint --ext \"**/*.{js,vue}\" --fix",
-    "lintfix:prettier": "prettier --write **/*.{html,scss,js,vue,md}",
+    "lintfix": "eslint . --fix --ext .js,.vue",
+    "lintfix:prettier": "prettier . --write --ignore-unknown",
     "prepare": "husky install",
     "preview": "node script/index.js --preview",
     "report": "node script/index.js --preview --report",
@@ -22,12 +19,11 @@
     "test:gzip": "pnpm dlx http-server dist --cors --gzip -c-1"
   },
   "lint-staged": {
-    "*.{js,vue}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{scss,md}": [
+    "*": [
       "prettier --write --ignore-unknown"
+    ],
+    "*.{js,vue}": [
+      "eslint --fix"
     ]
   },
   "dependencies": {
