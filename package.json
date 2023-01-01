@@ -9,7 +9,7 @@
     "lint": "eslint . --ext .js,.vue",
     "lint-staged": "lint-staged",
     "lint:prettier": "prettier . --check",
-    "lintfix": "eslint . --fix --ext .js,.vue",
+    "lintfix": "eslint . --ext .js,.vue --fix",
     "lintfix:prettier": "prettier . --write --ignore-unknown",
     "prepare": "husky install",
     "preview": "node script/index.js --preview",

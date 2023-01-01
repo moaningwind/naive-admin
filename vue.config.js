@@ -84,12 +84,7 @@ module.exports = {
           element: {
             name: 'chunk-element',
             test: /[\\/]node_modules[\\/]element-ui[\\/]/,
-            priority: 20,
-          },
-          mockjs: {
-            name: 'chunk-mockjs',
-            test: /[\\/]node_modules[\\/]mockjs[\\/]/,
-            priority: 25,
+            priority: 15,
           },
         },
       })
